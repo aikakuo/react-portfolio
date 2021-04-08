@@ -1,40 +1,43 @@
-import React, { Component } from 'react';
-export default class About extends Component {
-    render (){
-    let myData = this.props.myData 
+import React from 'react';
+import styled from "styled-components"
+
+const H1 = styled.h1`
+ 
+  font-weight: 900;
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+`
+
+const H3 = styled.h3`
+ 
+  font-weight: 900;
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+`
+
+
+const About = (props) => {
 
     return (
-<section id="hero">
-<div className="container-fluid">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="auth-image">
-      {/* image */}
-      </div>
-    </div>
 
-  <div class="col">
-    <h1>Welcome to my page</h1>
-    <p>My name is Aika. </p>
-    <p>I finished Full Stack Bootcamp at Northwestern University.</p>
-    <p>I posted few of my projects, check them out. </p>
-    <p>And don't forget to connect. </p>
+
+  <div className="col">
+    <H1>Welcome to my page</H1>
+    <H3>My name is Aika. 
+    I finished Full Stack Bootcamp Program at Northwestern University.
+    I posted few of my projects, check them out. 
+    And don't forget to connect. </H3>
   
-  <div class="connect">
- <ul>  
-   <a href="https://github.com/aikakuo" target="_blank" title="Aika' Github Profile">
-     <i class="fa fa-3x fa-github" aria-hidden="true"></i></a>
-      <a href="https://linkedin.com/in/aika-kuo-b42b53bb" target="_blank" title="Aika's Linkedin Profile">
-        <i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i>
-        </a>
-      </ul>
-    </div>
-  </div>
+  
 </div>
-</div>
-</section>
 
 
 
 
-)}}
+
+
+)}
+
+export default About;

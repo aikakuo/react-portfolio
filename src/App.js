@@ -1,19 +1,26 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import About from './components/About';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <About />
-        {/* <Resume />
-        <Portfolio />
-        <Footer /> */}
-      </div>
-    );
-  }
+import About from "./components/About"
+import Portfolio from "./pages/portfolio"
+import "../src/App.css"
+import styled from "styled-components"
+
+function App() {
+  return (
+    <Router>
+    
+    <Switch>
+      <About />
+      </Switch>
+      <Switch>
+      <Portfolio /> 
+    </Switch> 
+  </Router>
+  );
 }
 
 export default App;
