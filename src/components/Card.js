@@ -33,6 +33,7 @@ const H3 = styled.h3`
     text-align: center;
     color: #007bff;
     margin-bottom: 20px;
+    justify-content: center;
 `
 
 
@@ -42,8 +43,8 @@ const Card = (props) => {
   
 <Div class="card text-center">
  <div class="card-body">
+  <div className="col-lg-6">
     <strong><H3 class="card-title">{props.name}</H3></strong>
-  <div className="col-sm">
       <Img src={props.image} alt={props.name} />
       <A href={props.deployedSite} onClick={props.deployedSite} class="btn btn-primary">Link to Deployed site</A>
     </div>
